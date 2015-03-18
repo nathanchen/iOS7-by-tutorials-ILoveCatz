@@ -14,6 +14,20 @@
 		C5C6FA5D1AB8209A005DA50C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5C6FA5C1AB8209A005DA50C /* Images.xcassets */; };
 		C5C6FA601AB8209A005DA50C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5C6FA5E1AB8209A005DA50C /* LaunchScreen.xib */; };
 		C5C6FA6C1AB8209A005DA50C /* ILoveCatzTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C6FA6B1AB8209A005DA50C /* ILoveCatzTests.m */; };
+		C5C6FA801AB8212C005DA50C /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = C5C6FA761AB8212C005DA50C /* cat.png */; };
+		C5C6FA811AB8212C005DA50C /* cat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5C6FA771AB8212C005DA50C /* cat@2x.png */; };
+		C5C6FA821AB8212C005DA50C /* CatInBin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5C6FA781AB8212C005DA50C /* CatInBin.jpg */; };
+		C5C6FA831AB8212C005DA50C /* CuteKitten.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5C6FA791AB8212C005DA50C /* CuteKitten.jpg */; };
+		C5C6FA841AB8212C005DA50C /* DancingCat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5C6FA7A1AB8212C005DA50C /* DancingCat.jpg */; };
+		C5C6FA851AB8212C005DA50C /* FluffyKitten.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5C6FA7B1AB8212C005DA50C /* FluffyKitten.jpg */; };
+		C5C6FA861AB8212C005DA50C /* KittensInABasket.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5C6FA7C1AB8212C005DA50C /* KittensInABasket.jpg */; };
+		C5C6FA871AB8212C005DA50C /* RelaxedCat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5C6FA7D1AB8212C005DA50C /* RelaxedCat.jpg */; };
+		C5C6FA881AB8212C005DA50C /* VeryYoungKitten.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5C6FA7E1AB8212C005DA50C /* VeryYoungKitten.jpg */; };
+		C5C6FA891AB8212C005DA50C /* YawningCat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5C6FA7F1AB8212C005DA50C /* YawningCat.jpg */; };
+		C5C6FA8C1AB82173005DA50C /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C6FA8B1AB82173005DA50C /* Cat.m */; };
+		C5E2CEC31AB912D90087C430 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E2CEC21AB912D90087C430 /* DetailViewController.m */; };
+		C5E2CEC61AB913A70087C430 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E2CEC51AB913A70087C430 /* AboutViewController.m */; };
+		C5E2CEC91AB9146E0087C430 /* MasterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E2CEC81AB9146E0087C430 /* MasterTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +54,24 @@
 		C5C6FA651AB8209A005DA50C /* ILoveCatzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ILoveCatzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5C6FA6A1AB8209A005DA50C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5C6FA6B1AB8209A005DA50C /* ILoveCatzTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ILoveCatzTests.m; sourceTree = "<group>"; };
+		C5C6FA761AB8212C005DA50C /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
+		C5C6FA771AB8212C005DA50C /* cat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cat@2x.png"; sourceTree = "<group>"; };
+		C5C6FA781AB8212C005DA50C /* CatInBin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CatInBin.jpg; sourceTree = "<group>"; };
+		C5C6FA791AB8212C005DA50C /* CuteKitten.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CuteKitten.jpg; sourceTree = "<group>"; };
+		C5C6FA7A1AB8212C005DA50C /* DancingCat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DancingCat.jpg; sourceTree = "<group>"; };
+		C5C6FA7B1AB8212C005DA50C /* FluffyKitten.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FluffyKitten.jpg; sourceTree = "<group>"; };
+		C5C6FA7C1AB8212C005DA50C /* KittensInABasket.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = KittensInABasket.jpg; sourceTree = "<group>"; };
+		C5C6FA7D1AB8212C005DA50C /* RelaxedCat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RelaxedCat.jpg; sourceTree = "<group>"; };
+		C5C6FA7E1AB8212C005DA50C /* VeryYoungKitten.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VeryYoungKitten.jpg; sourceTree = "<group>"; };
+		C5C6FA7F1AB8212C005DA50C /* YawningCat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = YawningCat.jpg; sourceTree = "<group>"; };
+		C5C6FA8A1AB82173005DA50C /* Cat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
+		C5C6FA8B1AB82173005DA50C /* Cat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
+		C5E2CEC11AB912D90087C430 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		C5E2CEC21AB912D90087C430 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		C5E2CEC41AB913A70087C430 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		C5E2CEC51AB913A70087C430 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		C5E2CEC71AB9146E0087C430 /* MasterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterTableViewController.h; sourceTree = "<group>"; };
+		C5E2CEC81AB9146E0087C430 /* MasterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,14 +113,23 @@
 		C5C6FA4E1AB8209A005DA50C /* ILoveCatz */ = {
 			isa = PBXGroup;
 			children = (
+				C5C6FA751AB8212C005DA50C /* Assets */,
 				C5C6FA531AB8209A005DA50C /* AppDelegate.h */,
 				C5C6FA541AB8209A005DA50C /* AppDelegate.m */,
 				C5C6FA561AB8209A005DA50C /* ViewController.h */,
 				C5C6FA571AB8209A005DA50C /* ViewController.m */,
+				C5C6FA8A1AB82173005DA50C /* Cat.h */,
+				C5C6FA8B1AB82173005DA50C /* Cat.m */,
 				C5C6FA591AB8209A005DA50C /* Main.storyboard */,
-				C5C6FA5C1AB8209A005DA50C /* Images.xcassets */,
 				C5C6FA5E1AB8209A005DA50C /* LaunchScreen.xib */,
+				C5C6FA5C1AB8209A005DA50C /* Images.xcassets */,
 				C5C6FA4F1AB8209A005DA50C /* Supporting Files */,
+				C5E2CEC11AB912D90087C430 /* DetailViewController.h */,
+				C5E2CEC21AB912D90087C430 /* DetailViewController.m */,
+				C5E2CEC41AB913A70087C430 /* AboutViewController.h */,
+				C5E2CEC51AB913A70087C430 /* AboutViewController.m */,
+				C5E2CEC71AB9146E0087C430 /* MasterTableViewController.h */,
+				C5E2CEC81AB9146E0087C430 /* MasterTableViewController.m */,
 			);
 			path = ILoveCatz;
 			sourceTree = "<group>";
@@ -118,6 +159,23 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		C5C6FA751AB8212C005DA50C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C5C6FA761AB8212C005DA50C /* cat.png */,
+				C5C6FA771AB8212C005DA50C /* cat@2x.png */,
+				C5C6FA781AB8212C005DA50C /* CatInBin.jpg */,
+				C5C6FA791AB8212C005DA50C /* CuteKitten.jpg */,
+				C5C6FA7A1AB8212C005DA50C /* DancingCat.jpg */,
+				C5C6FA7B1AB8212C005DA50C /* FluffyKitten.jpg */,
+				C5C6FA7C1AB8212C005DA50C /* KittensInABasket.jpg */,
+				C5C6FA7D1AB8212C005DA50C /* RelaxedCat.jpg */,
+				C5C6FA7E1AB8212C005DA50C /* VeryYoungKitten.jpg */,
+				C5C6FA7F1AB8212C005DA50C /* YawningCat.jpg */,
+			);
+			path = Assets;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -200,8 +258,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5C6FA5B1AB8209A005DA50C /* Main.storyboard in Resources */,
+				C5C6FA841AB8212C005DA50C /* DancingCat.jpg in Resources */,
 				C5C6FA601AB8209A005DA50C /* LaunchScreen.xib in Resources */,
+				C5C6FA861AB8212C005DA50C /* KittensInABasket.jpg in Resources */,
+				C5C6FA801AB8212C005DA50C /* cat.png in Resources */,
+				C5C6FA831AB8212C005DA50C /* CuteKitten.jpg in Resources */,
+				C5C6FA811AB8212C005DA50C /* cat@2x.png in Resources */,
 				C5C6FA5D1AB8209A005DA50C /* Images.xcassets in Resources */,
+				C5C6FA891AB8212C005DA50C /* YawningCat.jpg in Resources */,
+				C5C6FA821AB8212C005DA50C /* CatInBin.jpg in Resources */,
+				C5C6FA881AB8212C005DA50C /* VeryYoungKitten.jpg in Resources */,
+				C5C6FA871AB8212C005DA50C /* RelaxedCat.jpg in Resources */,
+				C5C6FA851AB8212C005DA50C /* FluffyKitten.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,8 +287,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5E2CEC61AB913A70087C430 /* AboutViewController.m in Sources */,
+				C5E2CEC31AB912D90087C430 /* DetailViewController.m in Sources */,
+				C5C6FA8C1AB82173005DA50C /* Cat.m in Sources */,
 				C5C6FA581AB8209A005DA50C /* ViewController.m in Sources */,
 				C5C6FA551AB8209A005DA50C /* AppDelegate.m in Sources */,
+				C5E2CEC91AB9146E0087C430 /* MasterTableViewController.m in Sources */,
 				C5C6FA521AB8209A005DA50C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +486,7 @@
 				C5C6FA711AB8209A005DA50C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5C6FA721AB8209A005DA50C /* Build configuration list for PBXNativeTarget "ILoveCatzTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +495,7 @@
 				C5C6FA741AB8209A005DA50C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

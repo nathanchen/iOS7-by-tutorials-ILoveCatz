@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Cat.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +15,28 @@
 
 @implementation AppDelegate
 
+- (NSMutableArray *)cats
+{
+    _cats = [[NSMutableArray alloc] initWithObjects:
+             [[Cat alloc] initWithImage:@"CatInBin.jpg" title:@"Cat in a bin" attribution:@"http://www.sxc.hu/photo/1406907"],
+             [[Cat alloc] initWithImage:@"DancingCat.jpg" title:@"Dancing cat" attribution:@"http://www.sxc.hu/photo/1378836"],
+             [[Cat alloc] initWithImage:@"KittensInABasket.jpg" title:@"Kittens in a basket" attribution:@"http://www.sxc.hu/photo/1178601"],
+             [[Cat alloc] initWithImage:@"RelaxedCat.jpg" title:@"Relaxed cat" attribution:@"http://www.sxc.hu/photo/1361582"],
+             [[Cat alloc] initWithImage:@"VeryYoungKitten.jpg" title:@"Very young cat" attribution:@"http://www.sxc.hu/photo/235473"],
+             [[Cat alloc] initWithImage:@"YawningCat.jpg" title:@"Yawning cat" attribution:@"http://www.sxc.hu/photo/1353556"],
+             [[Cat alloc] initWithImage:@"CuteKitten.jpg" title:@"Cute kitten" attribution:@"http://www.sxc.hu/photo/1319510"],nil];
+    return _cats;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    UIColor *navColor = [UIColor colorWithRed:0.97 green:0.37 blue:0.38 alpha:1.0];
+    [UINavigationBar appearance].barTintColor = navColor;
+    [UINavigationBar appearance].tintColor = [UIColor whiteColor];
+    [UINavigationBar appearance].titleTextAttributes = [[NSDictionary alloc] initWithObjectsAndKeys:NSForegroundColorAttributeName, [UIColor whiteColor], nil];
+    
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+
     return YES;
 }
 
