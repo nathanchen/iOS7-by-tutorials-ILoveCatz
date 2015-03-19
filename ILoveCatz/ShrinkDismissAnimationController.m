@@ -36,52 +36,52 @@
     
     NSTimeInterval duration = [self transitionDuration:transitionContext];
     
-    UIView *intermediateView = [fromViewController.view snapshotViewAfterScreenUpdates:NO];
-    intermediateView.frame = fromViewController.view.frame;
-    [containerView addSubview:intermediateView];
-    
-    [fromViewController.view removeFromSuperview];
+//    UIView *intermediateView = [fromViewController.view snapshotViewAfterScreenUpdates:NO];
+//    intermediateView.frame = fromViewController.view.frame;
+//    [containerView addSubview:intermediateView];
+//    
+//    [fromViewController.view removeFromSuperview];
+//    
+//    [UIView animateKeyframesWithDuration:duration
+//                                   delay:0
+//                                 options:UIViewKeyframeAnimationOptionCalculationModeCubic
+//                              animations:^{
+//                                  [UIView addKeyframeWithRelativeStartTime:0.0
+//                                                          relativeDuration:0.5
+//                                                                animations:^{
+//                                                                    intermediateView.frame = shrunkenFrame;
+//                                                                    toViewController.view.alpha = 0.5;
+//                                                                }];
+//                                  [UIView addKeyframeWithRelativeStartTime:0.5
+//                                                          relativeDuration:0.5
+//                                                                animations:^{
+//                                                                    intermediateView.frame = fromFinalFrame;
+//                                                                    toViewController.view.alpha = 1;
+//                                                                }];
+//                              } completion:^(BOOL finished) {
+//                                  [intermediateView removeFromSuperview];
+//                                  [transitionContext completeTransition:YES];
+//                              }];
     
     [UIView animateKeyframesWithDuration:duration
-                                   delay:0
-                                 options:UIViewKeyframeAnimationOptionCalculationModeCubic
-                              animations:^{
-                                  [UIView addKeyframeWithRelativeStartTime:0.0
-                                                          relativeDuration:0.5
-                                                                animations:^{
-                                                                    intermediateView.frame = shrunkenFrame;
-                                                                    toViewController.view.alpha = 0.5;
-                                                                }];
-                                  [UIView addKeyframeWithRelativeStartTime:0.5
-                                                          relativeDuration:0.5
-                                                                animations:^{
-                                                                    intermediateView.frame = fromFinalFrame;
-                                                                    toViewController.view.alpha = 1;
-                                                                }];
-                              } completion:^(BOOL finished) {
-                                  [intermediateView removeFromSuperview];
-                                  [transitionContext completeTransition:YES];
-                              }];
-    
-//    [UIView animateKeyframesWithDuration:duration
-//                          delay:0
-//                        options:UIViewKeyframeAnimationOptionCalculationModeCubic
-//                     animations:^{
-//                         [UIView addKeyframeWithRelativeStartTime:0
-//                                                 relativeDuration:0.5
-//                                                       animations:^{
-//                                                           fromViewController.view.frame = shrunkenFrame;
-//                                                           toViewController.view.alpha = 0.5;
-//                                                       }];
-//                         [UIView addKeyframeWithRelativeStartTime:0.5
-//                                                 relativeDuration:0.5
-//                                                       animations:^{
-//                                                           fromViewController.view.frame = fromFinalFrame;
-//                                                           toViewController.view.alpha = 1;
-//                                                       }];
-//                     } completion:^(BOOL finished) {
-//                         [transitionContext completeTransition:YES];
-//                     }];
+                          delay:0
+                        options:UIViewKeyframeAnimationOptionCalculationModeCubic
+                     animations:^{
+                         [UIView addKeyframeWithRelativeStartTime:0
+                                                 relativeDuration:0.5
+                                                       animations:^{
+                                                           fromViewController.view.transform = CGAffineTransformMakeScale(0.5, 0.5);
+                                                           toViewController.view.alpha = 0.5;
+                                                       }];
+                         [UIView addKeyframeWithRelativeStartTime:0.5
+                                                 relativeDuration:0.5
+                                                       animations:^{
+                                                           fromViewController.view.frame = fromFinalFrame;
+                                                           toViewController.view.alpha = 1;
+                                                       }];
+                     } completion:^(BOOL finished) {
+                         [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
+                     }];
 }
 
 @end

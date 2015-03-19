@@ -32,6 +32,7 @@
 		C5E2CF011AB9570F0087C430 /* ShrinkDismissAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E2CF001AB9570F0087C430 /* ShrinkDismissAnimationController.m */; };
 		C5E2CF041AB962030087C430 /* FlipAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E2CF031AB962030087C430 /* FlipAnimationController.m */; };
 		C5E2CF071AB96FC00087C430 /* SwipeInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E2CF061AB96FC00087C430 /* SwipeInteractionController.m */; };
+		C5E2CF0A1ABA65FF0087C430 /* PinchInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E2CF091ABA65FF0087C430 /* PinchInteractionController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,8 @@
 		C5E2CF031AB962030087C430 /* FlipAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipAnimationController.m; sourceTree = "<group>"; };
 		C5E2CF051AB96FC00087C430 /* SwipeInteractionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeInteractionController.h; sourceTree = "<group>"; };
 		C5E2CF061AB96FC00087C430 /* SwipeInteractionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeInteractionController.m; sourceTree = "<group>"; };
+		C5E2CF081ABA65FF0087C430 /* PinchInteractionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinchInteractionController.h; sourceTree = "<group>"; };
+		C5E2CF091ABA65FF0087C430 /* PinchInteractionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinchInteractionController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +153,8 @@
 				C5E2CF031AB962030087C430 /* FlipAnimationController.m */,
 				C5E2CF051AB96FC00087C430 /* SwipeInteractionController.h */,
 				C5E2CF061AB96FC00087C430 /* SwipeInteractionController.m */,
+				C5E2CF081ABA65FF0087C430 /* PinchInteractionController.h */,
+				C5E2CF091ABA65FF0087C430 /* PinchInteractionController.m */,
 			);
 			path = ILoveCatz;
 			sourceTree = "<group>";
@@ -312,6 +317,7 @@
 				C5E2CEC31AB912D90087C430 /* DetailViewController.m in Sources */,
 				C5E2CF041AB962030087C430 /* FlipAnimationController.m in Sources */,
 				C5C6FA8C1AB82173005DA50C /* Cat.m in Sources */,
+				C5E2CF0A1ABA65FF0087C430 /* PinchInteractionController.m in Sources */,
 				C5C6FA581AB8209A005DA50C /* ViewController.m in Sources */,
 				C5C6FA551AB8209A005DA50C /* AppDelegate.m in Sources */,
 				C5E2CF071AB96FC00087C430 /* SwipeInteractionController.m in Sources */,

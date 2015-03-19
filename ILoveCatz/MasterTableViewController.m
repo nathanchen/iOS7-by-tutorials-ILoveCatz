@@ -14,6 +14,7 @@
 #import "ShrinkDismissAnimationController.h"
 #import "FlipAnimationController.h"
 #import "SwipeInteractionController.h"
+#import "PinchInteractionController.h"
 
 @interface MasterTableViewController ()
 {
@@ -21,6 +22,7 @@
     ShrinkDismissAnimationController *shrinkDismissAnimationController;
     FlipAnimationController *flipAnimationController;
     SwipeInteractionController *swipeInteractionController;
+    PinchInteractionController *pinchInteractionController;
 }
 
 @end
@@ -43,6 +45,7 @@
     shrinkDismissAnimationController = [[ShrinkDismissAnimationController alloc] init];
     flipAnimationController = [[FlipAnimationController alloc] init];
     swipeInteractionController = [[SwipeInteractionController alloc] init];
+    pinchInteractionController = [[PinchInteractionController alloc] init];
 }
 
 - (NSMutableArray *)cats
@@ -54,6 +57,11 @@
 - (id<UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController
 {
     return [swipeInteractionController interactionInProgress] ? swipeInteractionController : nil;
+}
+
+- (id <UIViewControllerInteractiveTransitioning>)interactionControllerForDismissal:(id <UIViewControllerAnimatedTransitioning>)animator
+{
+    return [pinchInteractionController interactionInProgress] ? pinchInteractionController : nil;
 }
 
 - (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC
@@ -137,7 +145,6 @@
     return shrinkDismissAnimationController;
 }
 
-
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -155,6 +162,7 @@
     else if ([[segue identifier] isEqualToString:@"showAbout"])
     {
         UIViewController *toVC = [segue destinationViewController];
+        [pinchInteractionController wireToViewController:toVC];
         toVC.transitioningDelegate = self;
     }
 }
