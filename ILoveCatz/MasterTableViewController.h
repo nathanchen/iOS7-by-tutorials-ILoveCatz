@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MasterTableViewController : UITableViewController
+@interface MasterTableViewController : UITableViewController <UIViewControllerTransitioningDelegate, UINavigationControllerDelegate>
 
 @end

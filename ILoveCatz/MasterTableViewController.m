@@ -10,8 +10,18 @@
 #import "AppDelegate.h"
 #import "Cat.h"
 #import "DetailViewController.h"
+#import "BouncePresentAnimationController.h"
+#import "ShrinkDismissAnimationController.h"
+#import "FlipAnimationController.h"
+#import "SwipeInteractionController.h"
 
 @interface MasterTableViewController ()
+{
+    BouncePresentAnimationController *bouncePresentAnimationController;
+    ShrinkDismissAnimationController *shrinkDismissAnimationController;
+    FlipAnimationController *flipAnimationController;
+    SwipeInteractionController *swipeInteractionController;
+}
 
 @end
 
@@ -28,12 +38,32 @@
     
     UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"cat"]];
     self.navigationItem.titleView = imageView;
+    self.navigationController.delegate = self;
+    bouncePresentAnimationController = [[BouncePresentAnimationController alloc] init];
+    shrinkDismissAnimationController = [[ShrinkDismissAnimationController alloc] init];
+    flipAnimationController = [[FlipAnimationController alloc] init];
+    swipeInteractionController = [[SwipeInteractionController alloc] init];
 }
 
 - (NSMutableArray *)cats
 {
     AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
     return appDelegate.cats;
+}
+
+- (id<UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController
+{
+    return [swipeInteractionController interactionInProgress] ? swipeInteractionController : nil;
+}
+
+- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC
+{
+    if (operation == UINavigationControllerOperationPush)
+    {
+        [swipeInteractionController wireToViewController:toVC];
+    }
+    flipAnimationController.reverse = operation == UINavigationControllerOperationPop;
+    return flipAnimationController;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -97,6 +127,16 @@
 }
 */
 
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
+{
+    return bouncePresentAnimationController;
+}
+
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
+{
+    return shrinkDismissAnimationController;
+}
+
 
 #pragma mark - Navigation
 
@@ -111,6 +151,11 @@
         
         DetailViewController *detailVC = segue.destinationViewController;
         detailVC.cat = cat;
+    }
+    else if ([[segue identifier] isEqualToString:@"showAbout"])
+    {
+        UIViewController *toVC = [segue destinationViewController];
+        toVC.transitioningDelegate = self;
     }
 }
 

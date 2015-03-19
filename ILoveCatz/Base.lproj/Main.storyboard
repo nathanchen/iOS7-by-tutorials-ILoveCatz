@@ -41,7 +41,7 @@
                     <navigationItem key="navigationItem" id="i6E-73-wsF">
                         <barButtonItem key="rightBarButtonItem" title="About" id="u4h-fR-LEF">
                             <connections>
-                                <segue destination="vuO-Sh-t7H" kind="modal" id="Jlc-1H-wXg"/>
+                                <segue destination="vuO-Sh-t7H" kind="modal" identifier="showAbout" id="Jlc-1H-wXg"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -72,7 +72,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="doneButtonPressed:" destination="vuO-Sh-t7H" eventType="touchUpInside" id="c9F-O9-hCz"/>
+                                            <action selector="doneButtonPressed:" destination="vuO-Sh-t7H" eventType="touchUpInside" id="dXj-zZ-rYt"/>
                                         </connections>
                                     </button>
                                 </subviews>

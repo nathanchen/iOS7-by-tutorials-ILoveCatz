@@ -28,6 +28,10 @@
 		C5E2CEC31AB912D90087C430 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E2CEC21AB912D90087C430 /* DetailViewController.m */; };
 		C5E2CEC61AB913A70087C430 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E2CEC51AB913A70087C430 /* AboutViewController.m */; };
 		C5E2CEC91AB9146E0087C430 /* MasterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E2CEC81AB9146E0087C430 /* MasterTableViewController.m */; };
+		C5E2CECC1AB91AF20087C430 /* BouncePresentAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E2CECB1AB91AF20087C430 /* BouncePresentAnimationController.m */; };
+		C5E2CF011AB9570F0087C430 /* ShrinkDismissAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E2CF001AB9570F0087C430 /* ShrinkDismissAnimationController.m */; };
+		C5E2CF041AB962030087C430 /* FlipAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E2CF031AB962030087C430 /* FlipAnimationController.m */; };
+		C5E2CF071AB96FC00087C430 /* SwipeInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E2CF061AB96FC00087C430 /* SwipeInteractionController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +76,14 @@
 		C5E2CEC51AB913A70087C430 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		C5E2CEC71AB9146E0087C430 /* MasterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterTableViewController.h; sourceTree = "<group>"; };
 		C5E2CEC81AB9146E0087C430 /* MasterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterTableViewController.m; sourceTree = "<group>"; };
+		C5E2CECA1AB91AF20087C430 /* BouncePresentAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BouncePresentAnimationController.h; sourceTree = "<group>"; };
+		C5E2CECB1AB91AF20087C430 /* BouncePresentAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BouncePresentAnimationController.m; sourceTree = "<group>"; };
+		C5E2CEFF1AB9570F0087C430 /* ShrinkDismissAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShrinkDismissAnimationController.h; sourceTree = "<group>"; };
+		C5E2CF001AB9570F0087C430 /* ShrinkDismissAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShrinkDismissAnimationController.m; sourceTree = "<group>"; };
+		C5E2CF021AB962030087C430 /* FlipAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipAnimationController.h; sourceTree = "<group>"; };
+		C5E2CF031AB962030087C430 /* FlipAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipAnimationController.m; sourceTree = "<group>"; };
+		C5E2CF051AB96FC00087C430 /* SwipeInteractionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeInteractionController.h; sourceTree = "<group>"; };
+		C5E2CF061AB96FC00087C430 /* SwipeInteractionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeInteractionController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +142,14 @@
 				C5E2CEC51AB913A70087C430 /* AboutViewController.m */,
 				C5E2CEC71AB9146E0087C430 /* MasterTableViewController.h */,
 				C5E2CEC81AB9146E0087C430 /* MasterTableViewController.m */,
+				C5E2CECA1AB91AF20087C430 /* BouncePresentAnimationController.h */,
+				C5E2CECB1AB91AF20087C430 /* BouncePresentAnimationController.m */,
+				C5E2CEFF1AB9570F0087C430 /* ShrinkDismissAnimationController.h */,
+				C5E2CF001AB9570F0087C430 /* ShrinkDismissAnimationController.m */,
+				C5E2CF021AB962030087C430 /* FlipAnimationController.h */,
+				C5E2CF031AB962030087C430 /* FlipAnimationController.m */,
+				C5E2CF051AB96FC00087C430 /* SwipeInteractionController.h */,
+				C5E2CF061AB96FC00087C430 /* SwipeInteractionController.m */,
 			);
 			path = ILoveCatz;
 			sourceTree = "<group>";
@@ -287,12 +307,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5E2CF011AB9570F0087C430 /* ShrinkDismissAnimationController.m in Sources */,
 				C5E2CEC61AB913A70087C430 /* AboutViewController.m in Sources */,
 				C5E2CEC31AB912D90087C430 /* DetailViewController.m in Sources */,
+				C5E2CF041AB962030087C430 /* FlipAnimationController.m in Sources */,
 				C5C6FA8C1AB82173005DA50C /* Cat.m in Sources */,
 				C5C6FA581AB8209A005DA50C /* ViewController.m in Sources */,
 				C5C6FA551AB8209A005DA50C /* AppDelegate.m in Sources */,
+				C5E2CF071AB96FC00087C430 /* SwipeInteractionController.m in Sources */,
 				C5E2CEC91AB9146E0087C430 /* MasterTableViewController.m in Sources */,
+				C5E2CECC1AB91AF20087C430 /* BouncePresentAnimationController.m in Sources */,
 				C5C6FA521AB8209A005DA50C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

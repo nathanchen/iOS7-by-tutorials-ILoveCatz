@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface AboutViewController : UIViewController
+
 - (IBAction)doneButtonPressed:(id)sender;
 
 @end
